@@ -6,15 +6,14 @@
 
     <groupId>Furry-Roleplay</groupId>
     <artifactId>Furry-Roleplay</artifactId>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>Furry Roleplay</name>
 
     <properties>
+        <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
     </properties>
 
     <build>
@@ -56,8 +55,8 @@
 
     <repositories>
         <repository>
-            <id>spigot-repo</id>
-            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            <id>papermc-repo</id>
+            <url>https://papermc.io/repo/repository/maven-public/</url>
         </repository>
         <repository>
             <id>sonatype</id>
@@ -72,20 +71,16 @@
             <url>https://libraries.minecraft.net</url>
         </repository>
         <repository>
-            <id>codemc</id>
-            <url>https://repo.codemc.org/repository/maven-public/</url>
-        </repository>
-        <repository>
             <id>dmulloy2-repo</id>
-            <url>https://repo.dmulloy2.net/repository/public/</url>
+            <url>https://repo.dmulloy2.net/nexus/repository/public/</url>
         </repository>
     </repositories>
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <groupId>com.destroystokyo.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.15.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <!-- Mojang Auth Library (needed for SkinsGUI) -->
@@ -116,16 +111,13 @@
         <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>
-            <version>5.1.0</version>
-            <scope>provided</scope>
+            <version>4.6.0-SNAPSHOT</version>
         </dependency>
-
         <!-- SkinsRestorer API -->
         <dependency>
-            <groupId>net.skinsrestorer</groupId>
-            <artifactId>skinsrestorer-api</artifactId>
-            <version>15.0.3</version>
-            <scope>provided</scope>
+            <groupId>com</groupId>
+            <artifactId>skinsrestorer</artifactId>
+            <version>13.7.5-SNAPSHOT</version>
         </dependency>
     </dependencies>
 </project>
