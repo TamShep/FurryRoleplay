@@ -120,8 +120,8 @@
         </dependency>
         <!-- SkinsRestorer API -->
         <dependency>
-            <groupId>com</groupId>
-            <artifactId>skinsrestorer</artifactId>
+            <groupId>net.skinsrestorer</groupId>
+            <artifactId>skinsrestorer-api</artifactId>
             <version>VERSION</version>
             <scope>provided</scope>
         </dependency>
