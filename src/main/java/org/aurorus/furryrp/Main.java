@@ -13,8 +13,6 @@ import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
-import skinsrestorer.bukkit.SkinsRestorer;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -134,7 +132,6 @@ public final class Main extends JavaPlugin
         new Gift(this);
         new GiveCoords(this);
         new Pride(this);
-        new Wardrobe(this);
         new Social(this);
         new LocalChat(this);
         new ManageGifts(this);
@@ -149,7 +146,6 @@ public final class Main extends JavaPlugin
         this.getServer().getPluginManager().registerEvents(new SocialClick(this), this);
         this.getServer().getPluginManager().registerEvents(new QuestsClick(this), this);
         this.getServer().getPluginManager().registerEvents(new SetSonaClick(this), this);
-        this.getServer().getPluginManager().registerEvents(new WardrobeChange(this), this);
         this.getServer().getPluginManager().registerEvents(new MaterialMarketUse(this), this);
 
         new BukkitRunnable()
