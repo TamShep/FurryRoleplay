@@ -15,7 +15,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import skinsrestorer.shared.utils.ReflectionUtil;
 
 import java.io.File;
 import java.lang.reflect.Array;
